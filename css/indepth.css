@@ -435,7 +435,7 @@
 }
 
 #indepth_cover .indepth_parallax_back{
-	
+	background-image: url(../images/portada.jpg);
 	background-size: auto 100%;
 	background-position: center center;
 
@@ -903,6 +903,8 @@ margin-top: 15px;
 	.indepth_box{
 		margin:  10px 0;
 	}
+	
+	
 }
 
 @media screen and (max-width:1023px) {
@@ -1074,7 +1076,7 @@ margin-top: 15px;
 	#indepth_cover .indepth_parallax_back{
 		background-size: cover;
 		background-attachment: scroll;
-		background-image: url(../images/portada_mobil.jpg);
+		background-image: url(../images/portada.jpg);
 		background-repeat: no-repeat;
 	}
 	
@@ -1176,6 +1178,14 @@ margin-top: 15px;
 }
 
 @media screen and (max-width: 605px) {
+	
+	.vimeoFrame{
+		display: none;
+	}
+	
+	#indepth_cover .indepth_parallax_back{
+		background-size: auto 600px;
+	}
 	
 	.indepth_docs_container{
 		width: 320px;
