@@ -10,11 +10,28 @@
 	width:638px;
 	height:358px; 
 	margin:0 auto;
-	margin-top: -50px;
+	margin-top: -60px;
 	margin-left: -75px;
 }
 
 .vimeoFrame {width:638px; height:358px; overflow:hidden; margin:0 auto;}
+
+.indepth_arrow_down{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-image: url(../images/boton_flecha.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: auto;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.indepth_arrow_down:hover{
+	opacity: .5;
+}
+
 
 .land{
 	fill: red;
@@ -621,6 +638,8 @@ margin-top: 15px;
 
 
 #indepth_intro{
+	padding-bottom: 30px;
+padding-top: 20px;
 	}
 
 #indepth_intro .indepth_quote, #indepth_intro .indepth_quote_autor{
@@ -634,6 +653,8 @@ margin-top: 15px;
 	background: url(../images/Foto_2.jpg) center bottom no-repeat, url(../images/Pixel_Foto1.png) center repeat;
 	height: 2650px;	
 	color: white;
+	padding-bottom: 30px;
+padding-top: 20px;
 	
 	
 }
@@ -646,7 +667,22 @@ margin-top: 15px;
 	background-size: auto 100%, auto 100%;
 	background-repeat: no-repeat;
 	margin: 60px auto;
+	position: relative;
 	
+}
+
+.indepth_tenis_2{
+	position: relative;
+	width: 425px;
+	height: 408px;
+
+}
+
+.indepth_tenis img{
+	position: absolute;
+	top:0;
+	left: 0;
+	display: none;
 }
 
 .indepth_caracteristicas{

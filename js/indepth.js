@@ -5,6 +5,8 @@ var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
 
+var s;
+
 var numeroImages2=3;
  var slider_on2=false;
  var intervalID2;
@@ -203,7 +205,7 @@ $(document).ready(function(){
 	slider_estados();
 	 startslider2();
 	 
-	 
+	 s = skrollr.init();
 	 var ventana_alto = $(window).height();
 	var ventana_ancho = $(window).width();
 	
@@ -214,7 +216,7 @@ $(document).ready(function(){
 	
 	$(".vimeo").css({
 		"width": (ventana_ancho+150)+"px",
-		"height": (ventana_alto+100)+"px"	
+		"height": (ventana_alto+120)+"px"	
 	})
 
 	 
@@ -258,7 +260,7 @@ $(window).on("resize", function(){
 	
 	$(".vimeo").css({
 		"width": (ventana_ancho+150)+"px",
-		"height": (ventana_alto+100)+"px"	
+		"height": (ventana_alto+120)+"px"	
 	})
 	var ventana_alto = $(window).height();
     	$('#indepth_cover').css("height",(ventana_alto)+"px");
