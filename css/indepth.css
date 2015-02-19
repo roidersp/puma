@@ -1504,9 +1504,18 @@ padding-top: 20px;
 	}
 	
 	.indepth_tenis img{
-		width: 80%;
+		width: 100%;
 		
 	}
+	
+	.indepth_tenis_2{
+	position: relative;
+	width: 300px;
+	height: 288px;
+
+}
+
+
 	.indepth_text_big{
 		width: 90%;
 		
