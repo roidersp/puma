@@ -1583,6 +1583,10 @@ height: 410px;
 		height: 320px;
 	}
 	
+	#skrollr-body{
+		min-height: 1px;
+	}
+	
 
 	
 	.indepth_infografia_container{
