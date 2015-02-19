@@ -206,6 +206,18 @@ $(document).ready(function(){
 	 startslider2();
 	 
 	 s = skrollr.init();
+	 
+	 $(" #skrollr-body").cs({
+		 "min-height": "1px",
+		"position": "relative",
+"top": 0,
+"left": 0, 
+"width": "100%",
+"height": "auto"
+	 })
+	 
+	 
+
 	 var ventana_alto = $(window).height();
 	var ventana_ancho = $(window).width();
 	
