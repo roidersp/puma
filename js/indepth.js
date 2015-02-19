@@ -205,7 +205,12 @@ $(document).ready(function(){
 	slider_estados();
 	 startslider2();
 	 
-	 s = skrollr.init();
+	 s = skrollr.init({
+		 mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+            }
+	 });
 	 
 	 $(" #skrollr-body").cs({
 		 "min-height": "1px",
