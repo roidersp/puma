@@ -17,20 +17,19 @@
 .vimeoFrame {width:638px; height:358px; overflow:hidden; margin:0 auto;}
 
 .indepth_arrow_down{
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	background-image: url(../images/boton_flecha.png);
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: 45px auto;
 	margin: auto;
 	margin-top: 10px;
-	cursor: pointer;
+	
 }
 
-.indepth_arrow_down:hover{
-	opacity: .5;
-}
+
 
 
 .land{
@@ -41,6 +40,66 @@
 	stroke-width:0.5;
 	
 }
+
+.indepth_share{
+	position: fixed;
+	right: 15px;
+	bottom: 70px;
+	z-index: 2000;
+	display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+	display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;	
+}
+	
+	#drag{
+		display: none;
+		right: 3px;
+		top: 8px;
+		z-index: 2000;
+		
+	}
+	
+	.indepth_share_item{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: rgba(208, 208, 208, 0.4);
+		float: left;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: auto 20px ;
+		margin-left: 7px;
+		cursor: pointer;
+		margin-bottom: 5px;
+	}
+	
+	.indepth_share_item.facebook{
+		background-image: url(../images/boton_facebook.png);
+	}
+	
+	.indepth_share_item.facebook:hover{
+		background-color: #3660A4;
+	}
+	
+	.indepth_share_item.twitter{
+		background-image: url(../images/boton_twitter.png);
+	}
+	
+	.indepth_share_item.twitter:hover{
+		background-color: #02B2F7;
+	}
+	
+	
+	.indepth_share_item.whatsapp{
+		display: none;
+		background-image: url(../images/boton_whatsapp.png);
+	}
+	
+	.indepth_share_item.whatsapp:hover{
+		background-color: #85D86D;
+	}
 
 #indepth_page7{
 	background-color: #B8D9D2;
@@ -703,15 +762,17 @@ padding-top: 20px;
 }
 
 .indepth_carac_container{
-	width: 100%;
+	margin: auto;
 	display: table;
 	margin-top: 90px;
+	width: 100%;
 }
 
 .indepth_caract_item{
-	width: 33.33333%;
+	width: 45%;
 	float: left;
 	text-align: center;
+	margin: 0px 2%;
 }
 
 .indepth_caract_item .indepth_caract{
@@ -732,6 +793,7 @@ padding-top: 20px;
 	font-size: 16px;
 	font-weight: 400;
 	padding:10px 0;
+	width: 45%;
 }
 
 .indepth_image_full{
@@ -1218,6 +1280,10 @@ padding-top: 20px;
 	.vimeoFrame{
 		display: none;
 	}
+	
+	.indepth_caract.down{
+
+	width: 60%;}
 	
 	#indepth_cover .indepth_parallax_back{
 		background-size: auto 600px;

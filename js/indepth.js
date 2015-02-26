@@ -12,16 +12,22 @@ var numeroImages2=3;
  var intervalID2;
 var posicion_slider2=0;
 
-$(document).on("click","path",function(){
-	alert("test");
-})
 
-$(document).on("click", "#indepth_button_ver" ,function(){
-		var position = $(".indepth_content_top").position();
-		$('html, body').animate({
-			scrollTop: position.top
-		}, 2000);
-	});
+
+
+
+
+$('#indepth_footer').waypoint(function(direction) {
+	 if(direction=='down'){
+		 $(".indepth_share").fadeOut("slow");
+	 }else{
+		  $(".indepth_share").fadeIn("slow");
+	 }
+	 
+	
+},{offset: 'bottom-in-view'});
+
+
 
 var indepth_sizeAdjust = function(firstTime){
 	$(".indepth_page").each(function(){
@@ -227,8 +233,8 @@ $(document).ready(function(){
 	var ventana_ancho = $(window).width();
 	
 	$(".vimeoFrame").css({
-		"width": ventana_ancho+"px",
-		"height": ventana_alto+"px"	
+		"width": (ventana_ancho-100)+"px",
+		"height": (ventana_alto-100)+"px"	
 	});
 	
 	$(".vimeo").css({
@@ -244,7 +250,7 @@ $(document).ready(function(){
     
 			 $('#indepth_cover_view').css("position","absolute");
     }else{
-    	$('#indepth_cover').css("height",(ventana_alto)+"px");
+    	$('#indepth_cover').css("height",(ventana_alto-100)+"px");
     	
     	 if(ventana_alto>600){
 	 	$('.indepth_break').css("height",ventana_alto+"px");
@@ -271,8 +277,8 @@ $(window).on("resize", function(){
 	var ventana_ancho = $(window).width();
 	
 	$(".vimeoFrame").css({
-		"width": ventana_ancho+"px",
-		"height": ventana_alto+"px"	
+		"width": (ventana_ancho-100)+"px",
+		"height": (ventana_alto-100)+"px"	
 	});
 	
 	$(".vimeo").css({
@@ -280,7 +286,7 @@ $(window).on("resize", function(){
 		"height": (ventana_alto+120)+"px"	
 	})
 	var ventana_alto = $(window).height();
-    	$('#indepth_cover').css("height",(ventana_alto)+"px");
+    	$('#indepth_cover').css("height",(ventana_alto-100)+"px");
     	 if(ventana_alto>600){
 	 	$('.indepth_break').css("height",ventana_alto+"px");
 	 	$('#indepth_cover .indepth_cover_back_body').css("top",ventana_alto*.60);
